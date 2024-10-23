@@ -18,34 +18,6 @@ The lexer scans the input string character by character:
 4. **Operators**: Supports arithmetic and assignment operators (`+`, `-`, `*`, `/`, `=`).
 5. **Whitespace**: Ignores spaces and newlines during tokenization.
 
-## Example Input
-
-ye x = 10 
-ye y = 20
-ye sum = x + y
-bolo sum
-
-## Example Output 
-
-[
-  { "type": "keyword", "value": "ye" },
-  { "type": "identifier", "value": "x" },
-  { "type": "operator", "value": "=" },
-  { "type": "number", "value": "10" },
-  { "type": "keyword", "value": "ye" },
-  { "type": "identifier", "value": "y" },
-  { "type": "operator", "value": "=" },
-  { "type": "number", "value": "20" },
-  { "type": "keyword", "value": "ye" },
-  { "type": "identifier", "value": "sum" },
-  { "type": "operator", "value": "=" },
-  { "type": "identifier", "value": "x" },
-  { "type": "operator", "value": "+" },
-  { "type": "identifier", "value": "y" },
-  { "type": "keyword", "value": "bolo" },
-  { "type": "identifier", "value": "sum" }
-]
-
 ---
 ### To run the lexer
 
